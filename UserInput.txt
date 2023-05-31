@@ -1,0 +1,13 @@
+To create a vocabulary tool with exercises, you would typically need user input in the following areas:
+
+Language Selection: Ask the user to choose the language they want to practice or learn. This input will determine the vocabulary dataset and exercises that are presented.
+
+Exercise Type Selection: Provide options for the user to select the type of exercise they want to practice, such as flashcards, multiple-choice, or fill in the blanks. This input will determine the format of the exercises presented to the user.
+
+Start or Next Exercise: Prompt the user to start a new exercise or proceed to the next exercise in the sequence. This input allows the user to control the flow of the exercises.
+
+User Response: Depending on the exercise type, you will need to collect the user's response. For example, if it's a flashcard exercise, the user may need to type the translation or meaning of the word. If it's a multiple-choice exercise, the user will select an option. And for fill in the blanks, the user will enter the missing word.
+
+Progress Tracking: You may ask for additional input to track user progress, such as their name or a unique identifier. This allows you to save and retrieve their progress for future sessions.
+
+Additional Customization: If your tool includes customization features, such as adding custom word lists or adjusting exercise settings, you would need user input for those configurations as well.
