@@ -1,5 +1,6 @@
 import tkinter as tk
-import SecondWindow as secondWindow
+import FlashcardWindow as flashWin
+from Flashcard import Flashcard 
 
 class MainWindow:
 
@@ -18,9 +19,6 @@ class MainWindow:
     label.pack(pady=20)
 
     # Create radio buttons for language selection
-    english_radio = tk.Radiobutton(self.window, text="English", variable=self.language_var, value="english")
-    english_radio.pack()
-
     spanish_radio = tk.Radiobutton(self.window, text="Spanish", variable=self.language_var, value="spanish")
     spanish_radio.pack()
 
@@ -37,9 +35,20 @@ class MainWindow:
     self.window.mainloop()
 
   def start_exercises(self):
+    
     selected_language = self.language_var.get()
     self.window.destroy()  # Close the current window
-    sw = secondWindow.SecondWindow()
-    sw.run()
+
+    # Example usage
+    flashcards = [
+      Flashcard("Hello", "Bonjour"),
+      Flashcard("Goodbye", "Au revoir"),
+      Flashcard("Thank you", "Merci"),
+      Flashcard("Yes", "Oui"),
+      Flashcard("No", "Non")
+    ]
+
+    flashcard_app = flashWin.FlashcardWindow(flashcards)
+    flashcard_app.run()
     # Perform actions based on the selected_language
     # For example, load the corresponding vocabulary dataset and start exercises
